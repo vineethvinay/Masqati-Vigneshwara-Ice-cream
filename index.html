@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vigneshwara Masquaiti Icecreams & Dairy">
+  <title>Vigneshwara Masquaiti | Icecreams & Dairy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="magic-bg" aria-hidden="true">
+    <span class="orb orb1"></span><span class="orb orb2"></span>
+    <span class="star s1">✦</span><span class="star s2">✧</span><span class="star s3">✦</span>
+    <span class="star s4">✧</span><span class="star s5">✦</span>
+  </div>
+
+  <header class="navbar">
+    <a class="brand" href="#home">
+      <img src="assets/masqati-logo.png" alt="Masqati Dairy Milk logo">
+      <div><strong>VIGNESHWARA MASQUAITI</strong><small>ICECREAMS & DAIRY</small></div>
+    </a>
+    <nav>
+      <a class="active" href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#about">About Us</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="map-link" target="_blank" rel="noopener" href="https://maps.app.goo.gl/3nmyutdQisBcn43K7">📍 Find Us</a>
+      <a class="whatsapp" target="_blank" rel="noopener" href="https://wa.me/">💬 WhatsApp</a>
+    </div>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="floating-cone" aria-hidden="true">
+        <div class="scoop pink"></div><div class="scoop chocolate"></div><div class="scoop vanilla"></div>
+        <div class="cone">◢◣<br>◥◤</div>
+      </div>
+
+      <div class="hero-content">
+        <div class="logo-3d"><img src="assets/masqati-logo.png" alt="Masqati logo"></div>
+        <p class="spell">✦ FRESHNESS • PURITY • GREAT TASTE ✦</p>
+        <h1>Vigneshwara Masquaiti</h1>
+        <h2>ICECREAMS & DAIRY</h2>
+        <p class="hero-copy">A little magic in every scoop.</p>
+        <div class="hero-buttons">
+          <a class="btn primary" href="#products">Explore Products →</a>
+          <a class="btn glass" target="_blank" rel="noopener" href="https://maps.app.goo.gl/3nmyutdQisBcn43K7">📍 Visit Our Shop</a>
+        </div>
+      </div>
+
+      <div class="milk-3d" aria-hidden="true">
+        <div class="milk-cap"></div><div class="milk-bottle"><span>🥛</span><b>MASQATI</b></div>
+      </div>
+    </section>
+
+    <section class="category-strip">
+      <button data-filter="all">🍨<span>All</span></button>
+      <button data-filter="Ice Cream">🍦<span>Ice Creams</span></button>
+      <button data-filter="Dairy">🥛<span>Milk</span></button>
+      <button data-filter="Dairy">🥣<span>Curd</span></button>
+      <button data-filter="Dairy">🧋<span>Lassi</span></button>
+      <button data-filter="Ice Cream">🍡<span>Kulfi</span></button>
+      <button data-filter="Ice Cream">🍧<span>Cups & Cones</span></button>
+      <button data-filter="Ice Cream">🧊<span>Family Packs</span></button>
+    </section>
+
+    <section class="content-wrap" id="products">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">OUR COLLECTION</span>
+          <h2>Popular Products</h2>
+        </div>
+        <div class="search-box"><input id="search" type="search" placeholder="Search products..."> 🔎</div>
+      </div>
+
+      <div class="products-grid" id="productGrid"></div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-card">
+        <span class="eyebrow">WHY CHOOSE US</span>
+        <h2>Good food brings happiness.</h2>
+        <p>Enjoy ice creams and dairy favourites in a clean, friendly and welcoming shop experience.</p>
+        <div class="trust-row">
+          <div><b>✦</b><strong>Fresh</strong><small>Every day</small></div>
+          <div><b>♜</b><strong>Quality</strong><small>You can trust</small></div>
+          <div><b>♥</b><strong>Tasty</strong><small>Every scoop</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+      <div class="section-heading">
+        <div><span class="eyebrow">CUSTOMER LOVE</span><h2>What Customers Say</h2></div>
+        <button class="btn primary" id="reviewBtn">✎ Write a Review</button>
+      </div>
+      <div class="review-grid" id="reviewGrid">
+        <article class="review"><div class="avatar">R</div><div><div class="stars">★★★★★</div><p>“The ice cream was fresh and tasty!”</p><small>— Customer</small></div></article>
+        <article class="review"><div class="avatar">P</div><div><div class="stars">★★★★★</div><p>“Great dairy products and friendly service.”</p><small>— Customer</small></div></article>
+        <article class="review"><div class="avatar">A</div><div><div class="stars">★★★★☆</div><p>“Loved the kulfi. Will visit again.”</p><small>— Customer</small></div></article>
+      </div>
+    </section>
+
+    <section class="review-form-wrap hidden" id="reviewFormWrap">
+      <form id="reviewForm" class="review-form">
+        <h3>Share your experience ✨</h3>
+        <input id="reviewName" required maxlength="30" placeholder="Your name">
+        <select id="reviewRating"><option value="5">★★★★★ 5</option><option value="4">★★★★☆ 4</option><option value="3">★★★☆☆ 3</option></select>
+        <textarea id="reviewText" required maxlength="160" placeholder="Write your review..."></textarea>
+        <div><button type="submit" class="btn primary">Post Review</button> <button type="button" class="btn glass" id="cancelReview">Cancel</button></div>
+      </form>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-inner">
+      <div><h3>📍 Visit Our Shop</h3><p>Vigneshwara Masquaiti Icecreams & Dairy</p><p>Near Main Road, Your Area, Telangana</p></div>
+      <a class="map-button" target="_blank" rel="noopener" href="https://maps.app.goo.gl/3nmyutdQisBcn43K7">🗺️ Open in Google Maps</a>
+      <div class="rating"><strong>★ 4.5</strong><span>Customer Rating</span></div>
+      <div><h3>💬 Contact Us</h3><p>WhatsApp for enquiries</p><a href="https://wa.me/" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+    </div>
+    <p class="copyright">© <span id="year"></span> Vigneshwara Masquaiti Icecreams & Dairy. All rights reserved.</p>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
